@@ -1,0 +1,32 @@
+@use 'common';
+html{
+    background-color: common.$main-color;
+}
+.App{
+    background-color: common.$main-color;
+    min-height: 100vh;
+}
+body{
+    margin: 0;
+    width: 100%;
+}
+.appContainer{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.introContainer{
+    display: flex;
+}
+.avatar{
+    width: 40%;
+}
+.welcomeIntro{
+    width: 60%;
+}
+.avatar{
+   
+}
+.about,.skills,.experience, .contact{
+    margin-top: 3%;
+}

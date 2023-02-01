@@ -1,0 +1,36 @@
+.contactContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+    >p{
+        color: white;
+    }
+}
+.iconSocial{
+    font-size: 25px;
+    margin-right: 1%;
+    cursor: pointer;
+}
+.social,.otherInfo{
+    width: 35%;
+}
+.otherInfo{
+    width: 65%;
+}
+#iconFB{
+  color: #2374E1;
+}
+#iconInsta{
+  color:  #ea4c89;
+}
+#iconGit{
+    color: #333;
+}
+#iconTwiter{
+    color: #1da1f2;
+}
+#iconGG{
+    color: #dd4b39;
+}

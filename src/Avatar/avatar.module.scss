@@ -1,0 +1,37 @@
+@use '../common.scss';
+.container{
+    width: 80%;
+}
+.avatarMain{
+    height: 30rem;
+    position: relative;
+}
+.avtBlockBefore{
+    width: 70%;
+    height: 25rem;
+    position: absolute ;
+    top:0;
+    left: 0;
+    background-color: #D9D9D9;
+    border: 10px solid white;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        height:-webkit-fill-available;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}
+.avtBlockAfter{
+    width: 60%;
+    height: 20rem;
+    background-color: common.$main-color;
+    position: absolute ;
+    right: 10%;
+    top: 29%;
+    border: 8px solid white;
+    z-index: 2;
+}

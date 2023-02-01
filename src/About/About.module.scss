@@ -1,0 +1,13 @@
+@use '../common.scss';
+.aboutContent{
+    width: 80%;
+}
+.aboutContainer{
+    >p{
+      
+      font-size: common.$fontSizeTitleChildLarge;
+    }
+    p{
+        color: white;
+    }
+}

@@ -1,24 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Header/Header';
+import styles from './app.module.scss'
+import Avatar from './Avatar/Avatar';
+import WelcomeIntro from './WelcomeIntro/WelcomeIntro';
+import About from './About/About';
+import Skills from './Skills/Skills';
+import Experience from './Experience/Experience';
+import Portfolio from './Portfolio/Portfolio';
+import Contact from './Contact/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles['App']}>
+      <div className={styles['appContainer']}>
+        <Header/>
+        <div className={styles['intro']}>
+          <div className={styles['introContainer']}>
+              <div className={styles['avatar']}>
+                  <Avatar/>
+              </div>
+              <div className={styles['welcomeIntro']}>
+                  <WelcomeIntro/>
+              </div>
+          </div>
+        </div>
+        <div className={styles['about']}>
+               <About/>
+        </div>
+        <div className={styles['skills']}>
+              <Skills/>
+        </div>
+        <div className={styles['experience']}>
+            <Experience/>
+        </div>
+        <div className={styles['portfolio']}>
+           <Portfolio/>
+        </div>
+        <div className={styles['contact']}>
+           <Contact/>
+        </div>
+      </div>
+      
     </div>
   );
 }
