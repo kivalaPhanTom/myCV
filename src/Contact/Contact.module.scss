@@ -1,7 +1,8 @@
+@use '../common.scss';
 .contactContent{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .social{
     >p{
@@ -9,15 +10,16 @@
     }
 }
 .iconSocial{
-    font-size: 25px;
-    margin-right: 1%;
+    font-size: 40px;
+    margin-right: 1.3%;
     cursor: pointer;
 }
-.social,.otherInfo{
-    width: 35%;
+.social{
+    width: 100%;
 }
-.otherInfo{
-    width: 65%;
+.listSocial, .phone{
+    display: flex;
+    justify-content: center;
 }
 #iconFB{
   color: #2374E1;
@@ -33,4 +35,13 @@
 }
 #iconGG{
     color: #dd4b39;
+}
+.myPhoneNumber{
+   color: #FE4B58;;
+}
+.phone{
+    >p{
+        color: white;
+        font-size: 20px;
+    }
 }
