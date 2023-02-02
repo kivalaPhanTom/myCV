@@ -6,7 +6,7 @@
 }
 .social{
     >p{
-        color: white;
+        color: common.$textColor;
     }
 }
 .iconSocial{
@@ -37,11 +37,11 @@
     color: #dd4b39;
 }
 .myPhoneNumber{
-   color: #FE4B58;;
+   color: common.$main-color1;
 }
 .phone{
     >p{
-        color: white;
+        color: common.$textColor;
         font-size: 20px;
     }
 }

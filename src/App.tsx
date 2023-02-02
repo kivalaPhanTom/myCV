@@ -24,19 +24,19 @@ function App() {
               </div>
           </div>
         </div>
-        <div className={styles['about']}>
+        {/* <div className={styles['about']}>
                <About/>
-        </div>
-        <div className={styles['skills']}>
+        </div> */}
+        <div id="skills" className={styles['skills']}>
               <Skills/>
         </div>
-        <div className={styles['experience']}>
+        <div id="experience"  className={styles['experience']}>
             <Experience/>
         </div>
-        <div className={styles['portfolio']}>
+        <div id="portfolio" className={styles['portfolio']}>
            <Portfolio/>
         </div>
-        <div className={styles['contact']}>
+        <div id="contact" className={styles['contact']}>
            <Contact/>
         </div>
       </div>

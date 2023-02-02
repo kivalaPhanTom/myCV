@@ -1,3 +1,4 @@
+@use '../common.scss';
 .header{
     display: flex;
     justify-content: flex-end;
@@ -17,10 +18,10 @@
     justify-content: center;
 }
 .p_menuItem{
-    color: white;
+    color: common.$textColor;
     cursor: pointer;
     font-size: 18px;
 }
 .textDecoration{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid common.$textColor;
 }

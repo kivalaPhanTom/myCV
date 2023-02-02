@@ -1,10 +1,11 @@
 import React from 'react'
+import TitleSection from '../TitleSection/TitleSection'
 import styles from './About.module.scss'
 
 function About() {
   return (
     <div className={styles['aboutContainer']}>
-        <p>About me</p>
+        <TitleSection title1 ='About' title2='me'/>
         <div className={styles['aboutContent']}>
             <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.   Lorem Ipsum has

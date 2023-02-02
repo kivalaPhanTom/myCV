@@ -5,20 +5,22 @@
 .skillsContainer{
     >p{ 
       font-size: common.$fontSizeTitleChildLarge;
-      color: white;
+      color: common.$textColor;
     }
 }
 
 .circleImg{
-    background-color: white;
+    background-color: common.$textColor;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid #FE4B58;
+    border: 5px solid common.$main-color1;;
 }
 .listSkill{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .skillItem{
     width: 10%;
@@ -31,5 +33,5 @@
 }
 .skillName{
     text-align: center;
-    color: white;
+    color: common.$textColor;
 }

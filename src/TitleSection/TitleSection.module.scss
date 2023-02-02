@@ -1,0 +1,26 @@
+@use '../common.scss';
+.titleSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.titleSectionContainer{
+    >p{
+        color: common.$textColor;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-top: 2%;
+        margin-bottom:10%;
+        >span{
+            color: common.$main-color1;
+        }
+    }
+}
+.underline{
+    width:65%;
+    background-color:common.$main-color1;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from './Contact.module.scss'
 import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineGithub, AiOutlineTwitter, AiOutlineGooglePlus} from "react-icons/ai";
+import TitleSection from '../TitleSection/TitleSection';
 
 
 function Contact() {
   return (
      <div className={styles['contactContainer']}>
-        <p>Contact me</p>
+        <TitleSection title1 ='Contact' title2='me'/>
         <div className={styles['contactContent']}>
             <div className={styles['social']}>
                 <div className={styles['listSocial']}>
@@ -20,6 +21,7 @@ function Contact() {
                   <p>Phone: <span className={styles['myPhoneNumber']}>0986622074</span></p>
                </div>
             </div>
+            
         </div>
     </div>
   )
