@@ -26,7 +26,9 @@
 .p_menuItem{
     color: common.$textColor;
     cursor: pointer;
-    font-size: 18px;
+    font-size: common.$fontSizeNormalTextLarge;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .textDecoration{
     border-bottom: 1px solid common.$textColor;

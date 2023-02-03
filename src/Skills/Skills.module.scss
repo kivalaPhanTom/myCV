@@ -11,10 +11,18 @@
 
 .circleImg{
     background-color: common.$textColor;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    border: 5px solid common.$main-color1;;
+    border: 5px solid common.$main-color1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >img{
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+    }
 }
 .listSkill{
     display: flex;
@@ -24,6 +32,7 @@
 }
 .skillItem{
     width: 10%;
+    cursor: pointer;
 }
 .divSkillName{
     display: flex;
@@ -34,4 +43,5 @@
 .skillName{
     text-align: center;
     color: common.$textColor;
+    font-size: common.$fontSizeNormalTextLarge;
 }

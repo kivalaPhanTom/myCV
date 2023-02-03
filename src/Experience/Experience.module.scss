@@ -52,6 +52,7 @@
         text-align: center;
         font-weight: 550;
         color: common.$textColor;
+        font-size: common.$fontSizeNormalTextLarge;
     }
 }
 .role{
@@ -61,9 +62,10 @@
 
 }
 .iconRightCircle{
- color: common.$textColor;
- font-size: 20px;
+    color: common.$textColor;
+    font-size: 20px;
 }
 .roleDetail{
     color: common.$textColor;
+    font-size: common.$fontSizeNormalTextLarge;
 }
