@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Header from './Header/Header';
 import styles from './app.module.scss'
 import Avatar from './Avatar/Avatar';
@@ -10,10 +10,12 @@ import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact';
 
 function App() {
+ 
   return (
     <div className={styles['App']}>
+       <Header/>
       <div className={styles['appContainer']}>
-        <Header/>
+       
         <div className={styles['intro']}>
           <div className={styles['introContainer']}>
               <div className={styles['avatar']}>

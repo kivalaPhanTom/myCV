@@ -1,20 +1,41 @@
-import React from 'react'
+import React, {useState, useEffect, useCallback} from 'react'
 import styles from './Header.module.scss'
 
+
 function Header() {
-  const handleGoToHome =()=>{
-   window.scrollTo(0, 0);
-  }
-  const handleGoToSection=(nameSection:string)=>{
+   const [y, setY] = useState(window.scrollY);
+
+   useEffect(() => {
+      setY(window.scrollY);
+   }, []);
+    
+   useEffect(() => {
+        window.addEventListener("scroll", (e) => handleNavigation(e));
+        return () => {
+          window.removeEventListener("scroll", (e) => handleNavigation(e));
+        };
+   }, [y]);
+  
+   const handleNavigation = useCallback(
+     (e:any):void => {
+        const window = e.currentTarget;
+        setY(window.scrollY);
+      }, [y]
+   );
+
+   const handleGoToHome =()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+   }
+   
+   const handleGoToSection=(nameSection:string)=>{
       const element = document.getElementById(nameSection);
       if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: 'smooth' });
+         element.scrollIntoView({ behavior: 'smooth' });
       }
-  }
-  
+   }
+
   return (
-    <div className={styles['header']}>
+    <div className={styles['header']+' '+styles[y > 0 ?'fixed':'']}>
          <div className={styles['container']}>
             <div className={styles['menuList']}>
                <div className={styles['menuItem']}>
