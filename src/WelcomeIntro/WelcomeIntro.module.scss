@@ -1,0 +1,29 @@
+@use '../common.scss';
+$fontWeightText:600;
+.WelcomeIntro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+.WelcomeIntroContainer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nameAuthor{
+    color: common.$main-color1;
+    font-weight: $fontWeightText;
+    font-size: 30px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.job, .detailYourself{
+    color: common.$textColor;
+}
+.job{
+    font-size:50px;
+    font-weight: $fontWeightText;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

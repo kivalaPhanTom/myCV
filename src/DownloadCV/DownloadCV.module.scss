@@ -1,0 +1,25 @@
+@use '../common.scss';
+.downloadCV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnDownload{
+    background-color:common.$main-color1;  
+    padding: 1% 2.2%; 
+    border-radius: 3px;
+    cursor: pointer;
+    >p{
+       color: common.$textColor;
+       margin: 0;
+       cursor: pointer;
+    }
+    transition: 0.4s;
+}
+.btnDownload:hover{
+    background-color: common.$textColor;
+    >p{
+        color: common.$main-color1; 
+    }
+    transition: 0.4s;
+}
