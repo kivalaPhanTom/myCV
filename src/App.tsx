@@ -3,7 +3,6 @@ import Header from './Header/Header';
 import styles from './app.module.scss'
 import Avatar from './Avatar/Avatar';
 import WelcomeIntro from './WelcomeIntro/WelcomeIntro';
-import About from './About/About';
 import Skills from './Skills/Skills';
 import Experience from './Experience/Experience';
 import Portfolio from './Portfolio/Portfolio';
@@ -16,7 +15,7 @@ function App() {
        <Header/>
       <div className={styles['appContainer']}>
        
-        <div className={styles['intro']}>
+        <div id="home"className={styles['intro']}>
           <div className={styles['introContainer']}>
               <div className={styles['avatar']}>
                   <Avatar/>
@@ -26,9 +25,6 @@ function App() {
               </div>
           </div>
         </div>
-        {/* <div className={styles['about']}>
-               <About/>
-        </div> */}
         <div id="skills" className={styles['skills']}>
               <Skills/>
         </div>

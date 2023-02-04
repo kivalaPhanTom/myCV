@@ -10,12 +10,15 @@
     z-index: 10;
 }
 .container{
-    width: 50%;
+    width: 40%;
 }
 .menuList{
-    display: flex;
-    align-items: center;
-    width: 100%;
+    display: inline;
+    li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 5%;
+    }
 }
 .menuItem{
     width: 15%;
@@ -29,9 +32,6 @@
     font-size: common.$fontSizeNormalTextLarge;
     text-transform: uppercase;
     font-weight: 600;
-}
-.textDecoration{
-    border-bottom: 1px solid common.$textColor;
 }
 .fixed{
     background-color: black;
