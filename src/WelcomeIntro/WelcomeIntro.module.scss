@@ -30,3 +30,14 @@ $fontWeightText:600;
     margin-top: 4px;
     margin-bottom: 4px;
 }
+@media only screen and (max-width: 768px) {
+    .nameAuthor{
+        font-size: 25px;
+    }
+    .job{
+        font-size:30px;
+    }
+    .detailYourself{
+        font-size: common.$fontSizeMediumTextLarge;
+    }
+}
