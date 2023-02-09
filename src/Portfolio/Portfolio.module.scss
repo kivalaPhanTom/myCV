@@ -1,5 +1,6 @@
 @use '../common.scss';
 $borderRadiusPortfolio: 20px;
+$borderRadiusPortfolioSmall: 8px;
 .portfolioContainer{
     width: 100%;
 }
@@ -61,7 +62,6 @@ $borderRadiusPortfolio: 20px;
     transition: all .5s ease-out;
     >p{
         color: common.$main-color;
-        font-size: 25px;
         font-size: common.$fontSizeNormalTextLarge;
     }
 }
@@ -90,5 +90,49 @@ $borderRadiusPortfolio: 20px;
 .infoPortfolio:hover{
     >p{
         color: common.$textColor !important;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .itemContainer{
+        height: 13rem;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .itemContainer{
+        height: 11rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .itemContainer{
+        height: 8rem;
+    }
+    .infoPortfolio{
+        >p{
+            font-size: common.$fontSizeNormalTextMedium;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .item{
+        width: 50%;
+    }
+    .infoPortfolio{
+        >p{
+            font-size: common.$fontSizeNormalTextSmall;
+        }
+    }
+}
+@media only screen and (max-width: 380px) {
+    .itemContainer{
+        height: 6rem;
+    }
+    #imgBackgroupPortfolio{
+        border-radius: $borderRadiusPortfolioSmall;
+    }
+    .itemContainer{
+        border-radius: $borderRadiusPortfolioSmall;
+    }
+    .infoPortfolio{
+        border-radius: $borderRadiusPortfolioSmall;
     }
 }

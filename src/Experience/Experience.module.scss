@@ -69,3 +69,48 @@
     color: common.$textColor;
     font-size: common.$fontSizeNormalTextLarge;
 }
+
+@media only screen and (max-width: 768px) {
+    .role{
+        font-size: common.$fontSizeNormalTextLarge;
+    }
+    .time{
+        >p{
+            font-size: common.$fontSizeNormalTextMedium;
+        }
+    }
+    .note{
+        >p{
+            font-size: common.$fontSizeNormalTextMedium;
+        }
+    }
+    .roleDetail{
+        font-size: common.$fontSizeNormalTextMedium;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .experienceContent{
+        display: block;
+    }
+    .item{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .role{
+        font-size: common.$fontSizeNormalTextMedium;
+    }
+    .time{
+        >p{
+            font-size: common.$fontSizeNormalTextSmall;
+        }
+    }
+    .note{
+        >p{
+            font-size: common.$fontSizeNormalTextSmall;
+        }
+    }
+    .roleDetail{
+        font-size: common.$fontSizeNormalTextSmall;
+    }
+}
