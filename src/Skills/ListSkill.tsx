@@ -9,6 +9,11 @@ function ListSkill() {
         <SkillItem/>
         <SkillItem/>
         <SkillItem/>
+        <SkillItem/>
+        <SkillItem/>
+        <SkillItem/>
+        <SkillItem/>
+        <SkillItem/>
     </div>
   )
 }

@@ -26,3 +26,21 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media only screen and (max-width: 768px) {
+    .titleSectionContainer{
+        >p{
+            font-size: common.$fontSizeTitleSectionMedium;
+        }
+    }
+}
+@media only screen and (max-width:560px) {
+    .titleSectionContainer{
+        >p{
+            font-size: common.$fontSizeTitleSectionMedium;
+        }
+    }
+    .underline{
+        height: 2px;
+    }
+}

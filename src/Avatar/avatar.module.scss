@@ -35,3 +35,40 @@
     border: 8px solid common.$textColor;
     z-index: 2;
 }
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    .avatarMain{
+        height: 30vw;
+    }
+    .avtBlockBefore{
+        width: 72%;
+        height: 31vw;
+        top:0;
+        left: 0;
+    }
+    .avtBlockAfter{
+        width: 65%;
+        height: 25vw;
+        right: 10%;
+        top: 35%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .avatarMain{
+        height: 75vw;
+    }
+    .avtBlockBefore{
+        width: 61%;
+        height: 61vw;
+        top: 0;
+        left: 10%;
+    }
+    .avtBlockAfter{
+        width: 57%;
+        height: 45vw;
+        right: 11%;
+        bottom: 0;
+    }
+}

@@ -3,6 +3,7 @@
     width: 100%;
 }
 .skillsContainer{
+    width: 100%;
     >p{ 
       font-size: common.$fontSizeTitleChildLarge;
       color: common.$textColor;
@@ -18,6 +19,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     >img{
         width: 70%;
         height: 70%;
@@ -29,10 +32,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .skillItem{
     width: 10%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .divSkillName{
     display: flex;
@@ -44,4 +51,54 @@
     text-align: center;
     color: common.$textColor;
     font-size: common.$fontSizeNormalTextLarge;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1207px) {
+    .skillName{
+        font-size: common.$fontSizeNormalTextMedium;
+    }
+    .skillItem{
+        width: 15%;
+    }
+}
+@media only screen and (max-width: 989px) {
+    .circleImg{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .skillName{
+        font-size: common.$fontSizeNormalTextMedium;
+    }
+    .circleImg{
+        width: 65px;
+        height: 65px;
+    }
+    .skillItem{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .circleImg{
+        width: 50px;
+        height: 50px;
+    }
+    .skillName{
+        font-size: common.$fontSizeNormalTextSmall;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .circleImg{
+        width: 40px;
+        height: 40px;
+    }
+    .skillItem{
+        width: 25%;
+    }
 }

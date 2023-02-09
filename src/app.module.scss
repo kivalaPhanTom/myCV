@@ -32,3 +32,19 @@ body{
 .about,.skills,.experience, .contact{
     margin-top: 5%;
 }
+@media only screen and (max-width: 480px) {
+    .introContainer{
+        display: block;
+    }
+    .avatar{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .welcomeIntro{
+        width: 100%;
+    }
+}
