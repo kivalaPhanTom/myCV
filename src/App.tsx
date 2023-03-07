@@ -9,21 +9,7 @@ import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact';
 
 function App() {
-  const [homeSectionHeight, setHomeSessionHeight] = useState(200)
 
-  useEffect(()=>{
-      let headerEl= document.getElementById('header')
-      let bodyHeight = document.body.clientHeight
-      
-      if(headerEl !== null &&  bodyHeight !== null){
-        const headerHeight = headerEl.clientHeight
-        console.log("a:",headerEl.clientHeight)
-        console.log("bodyHeight:",bodyHeight)
-        setHomeSessionHeight(1000 - headerHeight)
-      }
-  },[])
-
-  console.log("homeSectionHeight:",homeSectionHeight)
   return (
     <div className={styles['App']}>
       <div className={styles['introPage']}> 
