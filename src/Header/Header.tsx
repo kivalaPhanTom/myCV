@@ -58,7 +58,7 @@ function Header() {
 
   return (
    <>
-      <div className={styles['header']+' '+styles[y > 0 ?'fixed':'']}>
+      <div className={styles['header']+' '+styles[y > 0 ?'fixed':'']} id="header">
          <div className={styles['container']+" "+styles['menuDesktop']}>
             <ul className={styles['menuList']}>
                <li>

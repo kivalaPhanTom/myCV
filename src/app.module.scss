@@ -11,6 +11,15 @@ body{
     margin: 0;
     width: 100%;
 }
+.introPage{
+    height: 100vh;
+}
+.intro{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
 .appContainer{
     width: 95%;
     margin-left: auto;
@@ -19,12 +28,18 @@ body{
 }
 .introContainer{
     display: flex;
+    height: 100%;
 }
 .avatar{
     width: 40%;
+    display: flex;
+    margin-top: 5%;
 }
 .welcomeIntro{
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .avatar{
    
