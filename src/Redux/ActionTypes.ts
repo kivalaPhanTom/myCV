@@ -1,1 +1,14 @@
 export const SELECT_MENU_ITEM = 'SELECT_MENU_ITEM';
+export const GET_CV_INFO = 'GET_CV_INFO'
+export const SET_NAME_OWNER = 'SET_NAME_OWNER';
+export const SET_PHONE_NUMBER = 'SET_PHONE_NUMBER';
+export const SET_EMAIL = 'SET_EMAIL';
+export const SET_ABOUT = 'SET_ABOUT';
+export const SET_LOADING ='SET_LOADING'
+export const SET_AVATAR ='SET_AVATAR'
+export const SET_ID ='SET_ID'
+export const SET_LINK_CV = 'SET_LINK_CV';
+export const SET_TYPING_KEYWORD = 'SET_TYPING_KEYWORD';
+export const SET_LIST_EXPERIENCE = 'SET_LIST_EXPERIENCE';
+export const SET_LIST_SKILLS = 'SET_LIST_SKILLS';
+export const SET_LIST_PORTFOLIO = 'SET_LIST_PORTFOLIO';

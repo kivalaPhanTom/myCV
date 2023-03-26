@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './DownloadCV.module.scss'
+import {useSelector } from 'react-redux';
 
 function DownloadCV() {
   return (

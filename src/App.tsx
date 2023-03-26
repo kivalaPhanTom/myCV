@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import React,{useEffect} from 'react';
 import Header from './Header/Header';
 import styles from './app.module.scss'
 import Avatar from './Avatar/Avatar';
@@ -7,8 +7,17 @@ import Skills from './Skills/Skills';
 import Experience from './Experience/Experience';
 import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact';
+import {useSelector, useDispatch } from 'react-redux';
+import * as cvActions  from "./Redux/Actions";
+import Loading from './Loading/Loading';
 
 function App() {
+  const dispatch = useDispatch();
+  const isLoading = useSelector((state:{CVSlice:{isLoading:boolean}})=> state.CVSlice.isLoading)
+  
+  useEffect(()=>{
+    dispatch(cvActions.getCVInfo({}))
+  },[])
 
   return (
     <div className={styles['App']}>
@@ -27,8 +36,6 @@ function App() {
       </div>
       
       <div className={styles['appContainer']}>
-       
-       
         <div id="skills" className={styles['skills']}>
               <Skills/>
         </div>
@@ -42,7 +49,11 @@ function App() {
            <Contact/>
         </div>
       </div>
-      
+      {
+        isLoading ? (
+          <Loading/>
+        ):''
+      }
     </div>
   );
 }

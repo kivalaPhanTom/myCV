@@ -1,14 +1,21 @@
 import React from 'react'
 import styles from './Portfolio.module.scss'
 
-function PortfolioItem() {
+type listPortfolioObject={
+  key:string;
+  name:string;
+  img:string;
+  link:string;
+}
+
+function PortfolioItem({key, name, img, link}:listPortfolioObject) {
   return (
     <div className={styles['itemContainer']}>
         <div className={styles['backgroundPortfolio']}>
-            <img id={styles['imgBackgroupPortfolio']} src='https://www.w3schools.com/css/img_forest.jpg' alt=''/>
+            <img id={styles['imgBackgroupPortfolio']} src={img} alt=''/>
         </div>
         <div className={styles['infoPortfolio']}>
-            <p>Name portfolio</p>
+            <p>{name}</p>
         </div>
     </div>
   )

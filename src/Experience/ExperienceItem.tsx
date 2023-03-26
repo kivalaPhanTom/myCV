@@ -2,24 +2,33 @@ import React from 'react'
 import styles from './Experience.module.scss'
 import { AiFillRightCircle } from "react-icons/ai";
 
-function ExperienceItem() {
+type listExperienceObject={
+  order:string;
+  company:string;
+  fromTime:string;
+  toTime:string;
+  role:string;
+  detail:string;
+}
+
+function ExperienceItem({order, company, fromTime, toTime, role, detail}:listExperienceObject) {
   return (
     <div className={styles['expItemContainer']}>
         <div className={styles['timeLine']}>
             <div className={styles['time']}>
-                <p>2015 - 2021</p>
+                <p>{fromTime} - {toTime}</p>
             </div>
             <div className={styles['arrow']}>
                 <div className={styles['line']}></div>
                 <AiFillRightCircle className={styles['iconRightCircle']}/>
             </div>
             <div className={styles['note']}>
-               <p>UIT</p>
+               <p>{company}</p>
             </div>
         </div>
         <div className={styles['detail']}>
-            <p className={styles['role']}>Student</p>
-            <p className={styles['roleDetail']}>heh he mma sdsidsidjsd cvckvjckvj qwooinj cncnc</p>
+            <p className={styles['role']}>{role}</p>
+            <p className={styles['roleDetail']}>{detail}</p>
          </div>
     </div>
   )
