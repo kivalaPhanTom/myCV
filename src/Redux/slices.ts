@@ -63,6 +63,9 @@ const CVSlice = createSlice({
       builder.addCase(actionCV.setLoading, (state:any, action:any) => {
         return {...state, isLoading:action.payload}
       })
+      builder.addCase(actionCV.setLinkCV, (state:any, action:any) => {
+        return {...state, linkCV:action.payload}
+      })
     },
   })
   const { reducer } = CVSlice;

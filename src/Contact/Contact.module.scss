@@ -61,6 +61,14 @@
         font-size: common.$fontSizeNormalTextLarge;
     }
 }
+.divGmail{
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+    p{
+        color: white;
+    }
+}
 @media only screen and (max-width: 480px) {
     .iconSocial{
         font-size: 30px;

@@ -9,8 +9,11 @@ type listPortfolioObject={
 }
 
 function PortfolioItem({key, name, img, link}:listPortfolioObject) {
+  const handleRedirectPortfoioPage =()=>{
+    window.open(link, '_blank');
+  }
   return (
-    <div className={styles['itemContainer']}>
+    <div className={styles['itemContainer']} onClick={handleRedirectPortfoioPage}>
         <div className={styles['backgroundPortfolio']}>
             <img id={styles['imgBackgroupPortfolio']} src={img} alt=''/>
         </div>
