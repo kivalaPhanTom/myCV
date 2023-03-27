@@ -16,7 +16,7 @@ function ExperienceItem({order, company, fromTime, toTime, role, detail}:listExp
     <div className={styles['expItemContainer']}>
         <div className={styles['timeLine']}>
             <div className={styles['time']}>
-                <p>{fromTime} - {toTime}</p>
+                <p>{fromTime} - {toTime !=='' ? toTime :"Now"}</p>
             </div>
             <div className={styles['arrow']}>
                 <div className={styles['line']}></div>
