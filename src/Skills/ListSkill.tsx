@@ -18,15 +18,6 @@ function ListSkill() {
           <SkillItem key={index} order={item.key} name={item.name} img={item.img}/>
         ))
       }
-        {/* <SkillItem/>
-        <SkillItem/>
-        <SkillItem/>
-        <SkillItem/>
-        <SkillItem/>
-        <SkillItem/>
-        <SkillItem/>
-        <SkillItem/>
-        <SkillItem/> */}
     </div>
   )
 }

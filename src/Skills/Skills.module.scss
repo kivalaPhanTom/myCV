@@ -3,7 +3,9 @@
     width: 100%;
 }
 .skillsContainer{
-    width: 100%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     >p{ 
       font-size: common.$fontSizeTitleChildLarge;
       color: common.$textColor;
@@ -12,8 +14,8 @@
 
 .circleImg{
     background-color: common.$textColor;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     border: 5px solid common.$main-color1;
     display: flex;
@@ -35,11 +37,12 @@
     width: 100%;
 }
 .skillItem{
-    width: 10%;
+    width: 20%;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1.3%;
 }
 .divSkillName{
     display: flex;
@@ -79,6 +82,9 @@
     }
     .skillItem{
         width: 20%;
+    }
+    .skillsContainer{
+        width: 100%;
     }
 }
 
