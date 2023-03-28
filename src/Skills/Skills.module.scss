@@ -3,7 +3,7 @@
     width: 100%;
 }
 .skillsContainer{
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     >p{ 
@@ -37,7 +37,7 @@
     width: 100%;
 }
 .skillItem{
-    width: 20%;
+    width: 10%;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -57,7 +57,14 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+@media only screen and (min-width: 1208px) {
+    .skillsContainer{
+        width: 50%;
+    }
+    .skillItem{
+        width: 20%;
+    }
+}
 @media only screen and (max-width: 1207px) {
     .skillName{
         font-size: common.$fontSizeNormalTextMedium;
