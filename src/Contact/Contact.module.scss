@@ -9,6 +9,12 @@
     transition:0.4s;
     border-radius: 50%;
 }
+@mixin centerdBox($justifyContent) {
+    display: flex;
+    align-items: center;
+    justify-content: $justifyContent;
+}
+
 .contactContent{
     display: flex;
     align-items: center;
@@ -44,12 +50,15 @@
     color: #1da1f2;
 }
 #iconGG{
+    font-size:2rem;
+}
+#iconGG{
     color: #dd4b39;
 }
 #iconGG, #iconTwiter, #iconGit, #iconInsta, #iconFB{
    @include customCommonIcon;
 }
-#iconGG:hover, #iconTwiter:hover, #iconGit:hover, #iconInsta:hover, #iconFB:hover{
+#iconTwiter:hover, #iconGit:hover, #iconInsta:hover, #iconFB:hover{
     @include hoverIcon;
 }
 .myPhoneNumber{
@@ -74,8 +83,20 @@
         font-size: 30px;
     }
     .phone{
+        display: block;
         >p{
             font-size: common.$fontSizeNormalTextSmall;
+            @include centerdBox(center);
+            margin-bottom: 0 !important;
+        }
+        .divGmail{
+            @include centerdBox(center);
+            #iconGG{
+                font-size: 1.4rem;
+            }
+            >p{
+                font-size: common.$fontSizeNormalTextSmall;
+            }
         }
     }
 }

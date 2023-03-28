@@ -31,10 +31,6 @@ function Contact() {
                         className={styles['iconSocial']} 
                         onClick ={()=>handleRedirect('https://github.com/kivalaPhanTom')}
                     /> 
-                    {/* <AiOutlineTwitter 
-                        id={styles['iconTwiter']} 
-                        className={styles['iconSocial']}
-                    /> */}
                 </div>
                <div className={styles['phone']}>
                   <p>Phone: <span className={styles['myPhoneNumber']}>{phoneNumber}</span></p>
