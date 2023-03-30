@@ -31,3 +31,8 @@
         font-size: common.$fontSizeNormalTextMedium;
     }
 }
+@media only screen and (max-width: 480px) {
+   .downloadCV{
+     justify-content: center;
+   }
+}

@@ -12,10 +12,7 @@ function WelcomeIntro() {
   return (
     <div className={styles['WelcomeIntro']}>
        <div className={styles['WelcomeIntroContainer']}>
-      
-       
           <p className={styles['nameAuthor']}>{`Hello, I am ${ownerName}`}</p>
-          
           <p className={styles['job']}>
             {
               typingKeyword.length > 0 ?(

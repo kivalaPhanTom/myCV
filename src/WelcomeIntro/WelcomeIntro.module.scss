@@ -42,8 +42,14 @@ $fontWeightText:600;
 }
 
 @media only screen and (max-width: 480px) {
+    .nameAuthor,.job{
+        text-align: center;
+    }
     .nameAuthor{
         font-size: 20px;
+    }
+    .detailYourself{
+        margin-top: 30%;
     }
     .job{
         font-size:25px;

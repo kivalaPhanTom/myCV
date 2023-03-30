@@ -45,7 +45,14 @@ body{
     margin-top: 5%;
 }
 @media only screen and (max-width: 480px) {
+    .intro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+    }
     .introContainer{
+        height: 90%;
         display: block;
     }
     .avatar{
