@@ -8,7 +8,7 @@ function Avatar() {
     <div className={styles['container']}>
       <div className={styles['avatarMain']}>
           <div className={styles['avtBlockBefore']}>
-            <img alt="avt" src={linkAvatar}/>
+            <img alt="avt" src={linkAvatar} loading="lazy" />
           </div>
           <div className={styles['avtBlockAfter']}>
            

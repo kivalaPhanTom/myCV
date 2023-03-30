@@ -29,24 +29,6 @@ function Portfolio() {
                     </div>
                 ))
             }
-            {/* <div className={styles['item']}>
-                <PortfolioItem/>
-            </div>
-            <div className={styles['item']}>
-                <PortfolioItem/>
-            </div>
-            <div className={styles['item']}>
-                <PortfolioItem/>
-            </div>
-            <div className={styles['item']}>
-                <PortfolioItem/>
-            </div>
-            <div className={styles['item']}>
-                <PortfolioItem/>
-            </div>
-            <div className={styles['item']}>
-                <PortfolioItem/>
-            </div> */}
         </div>
     </div>
     )
