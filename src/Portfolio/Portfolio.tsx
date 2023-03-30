@@ -17,18 +17,21 @@ function Portfolio() {
         <div className={styles['portfolioContainer']}>
         <TitleSection title1 ='My' title2='Portfolio'/>
         <div className={styles['portfolioContent']}>
-            {
-                listPortfolio.map((item, index)=>(
-                    <div className={styles['item']} key={index}>
-                        <PortfolioItem
-                            key = {item.key}
-                            name = {item.name}
-                            img = {item.img}
-                            link = {item.link}
-                        />
-                    </div>
-                ))
-            }
+            <div className={styles['portfolioContentContainer']}>
+                {
+                    listPortfolio.map((item, index)=>(
+                        <div className={styles['item']} key={index}>
+                            <PortfolioItem
+                                key = {item.key}
+                                name = {item.name}
+                                img = {item.img}
+                                link = {item.link}
+                            />
+                        </div>
+                    ))
+                }
+            </div>
+            
         </div>
     </div>
     )

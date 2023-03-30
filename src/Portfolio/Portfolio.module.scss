@@ -3,18 +3,20 @@ $borderRadiusPortfolio: 20px;
 $borderRadiusPortfolioSmall: 8px;
 .portfolioContainer{
     width: 100%;
-}
-.portfolioContainer{
     >p{ 
       font-size: common.$fontSizeTitleChildLarge;
       color: common.$textColor;
     }
 }
 .portfolioContent{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolioContentContainer{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
 }
 #imgBackgroupPortfolio{
     width: 100%;
@@ -32,7 +34,7 @@ $borderRadiusPortfolioSmall: 8px;
     cursor: pointer;
 }
 .item{
-    width: 30%;
+    width: 33.1%;
     margin-bottom: 20px;
 }
 .backgroundPortfolio{
@@ -67,27 +69,8 @@ $borderRadiusPortfolioSmall: 8px;
     }
 }
 .infoPortfolio:hover{
-    // background: rgb(31,34,53);
-    // background: linear-gradient(90deg, rgba(31,34,53,1) 0%, rgba(31,34,53,1) 39%, rgba(123,118,215,1) 91%);
-    // transition: 0.2s;
-    // background-color:#6bc3ef;
-    // background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.7) 100%);
-    // background-repeat:no-repeat;
-    // background-size: 200% 100%; 
-    // transition:background-size 1s, background-color 1s;
     background-position: left bottom;
 }
-// @-webkit-keyframes run {
-//     0% {
-//       left: 0;
-//     }
-//     50% {
-//       left: 100%;
-//     }
-//     100% {
-//       left: 0;    
-//     }
-//   }
 .infoPortfolio:hover{
     >p{
         color: common.$textColor !important;
