@@ -10,6 +10,7 @@ import Contact from './Contact/Contact';
 import {useSelector, useDispatch } from 'react-redux';
 import * as cvActions  from "./Redux/Actions";
 import Loading from './Loading/Loading';
+import LazyLoad from 'react-lazy-load';
 
 function App() {
   const dispatch = useDispatch();
@@ -36,18 +37,39 @@ function App() {
       </div>
       
       <div className={styles['appContainer']}>
+        
         <div id="skills" className={styles['skills']}>
-              <Skills/>
+            <LazyLoad 
+              threshold={0.35}
+            >
+               <Skills/>
+            </LazyLoad>
         </div>
+
         <div id="experience"  className={styles['experience']}>
-            <Experience/>
+            <LazyLoad 
+              threshold={0.35}
+            >
+                 <Experience/>
+            </LazyLoad>
         </div>
+
         <div id="portfolio" className={styles['portfolio']}>
-           <Portfolio/>
+            <LazyLoad 
+              threshold={0.35}
+            >
+                <Portfolio/>
+            </LazyLoad>
         </div>
+
         <div id="contact" className={styles['contact']}>
-           <Contact/>
+           <LazyLoad 
+              threshold={0.35}
+            >
+                <Contact/>
+            </LazyLoad>
         </div>
+
       </div>
       {
         isLoading ? (
