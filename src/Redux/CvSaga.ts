@@ -23,7 +23,7 @@ function* handleFecthCVInfo(action:any){
             if(data.length === 0){
                 MessageCommon.openNotificationError("Chưa có dữ liệu trong hệ thống")
             }else{
-                const { linkAvatar, _id, about, email, listExperience, listPortfolio, listSkills, ownerName, phoneNumber, typingKeyword, linkCV } = data[0]
+                const { linkAvatar, _id, about, email, listExperience, listPortfolio, listSkills, ownerName, phoneNumber, typingKeyword, linkCV, listEducation } = data[0]
                 yield put(cvAction.setID(_id))
                 yield put(cvAction.setAvatar(linkAvatar))
                 yield put(cvAction.setEmail(email))
@@ -34,6 +34,7 @@ function* handleFecthCVInfo(action:any){
                 yield put(cvAction.setListSkills(listSkills))
                 yield put(cvAction.setListPortfolio(listPortfolio))
                 yield put(cvAction.setTypingKeyword(typingKeyword))
+                yield put(cvAction.setListEducation(listEducation))
                 yield put(cvAction.setLinkCV(linkCV))
             }
         }

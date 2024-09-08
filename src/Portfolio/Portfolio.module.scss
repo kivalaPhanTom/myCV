@@ -2,7 +2,8 @@
 $borderRadiusPortfolio: 20px;
 $borderRadiusPortfolioSmall: 8px;
 .portfolioContainer{
-    width: 100%;
+    // width: 100%;
+    @include common.paddingSectionLg;
     >p{ 
       font-size: common.$fontSizeTitleChildLarge;
       color: common.$textColor;

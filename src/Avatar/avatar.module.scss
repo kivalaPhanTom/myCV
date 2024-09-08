@@ -7,7 +7,7 @@
     position: relative;
 }
 .avtBlockBefore{
-    width: 70%;
+    width: 80%;
     height: 26vw;
     position: absolute ;
     top:0;
@@ -27,12 +27,12 @@
     }
 }
 .avtBlockAfter{
-    width: 60%;
+    width: 80%;
     height: 22vw;
     background-color: common.$main-color;
     position: absolute ;
-    right: 10%;
-    top: 29%;
+    right: 7%;
+    top: 23%;
     border: 8px solid common.$textColor;
     z-index: 2;
 }

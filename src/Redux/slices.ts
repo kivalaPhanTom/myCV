@@ -19,6 +19,7 @@ const initialState = {
     listSkills:[],
     listExperience:[],
     listPortfolio:[],
+    listEducation:[]
 } as cvState
 
 const CVSlice = createSlice({
@@ -65,6 +66,9 @@ const CVSlice = createSlice({
       })
       builder.addCase(actionCV.setLinkCV, (state:any, action:any) => {
         return {...state, linkCV:action.payload}
+      })
+      builder.addCase(actionCV.setListEducation, (state:any, action:any) => {
+        return {...state, listEducation:action.payload}
       })
     },
   })

@@ -1,100 +1,138 @@
 @use '../common.scss';
-@mixin hoverIcon(){
-    background-color: common.$textColor;;
-    transition:0.4s;
+
+@mixin hoverIcon() {
+    background-color: common.$textColor;
+    transition: 0.4s;
 }
-@mixin customCommonIcon(){
+
+@mixin customCommonIcon() {
     background-color: common.$main-color;
-    padding:0.2%;
-    transition:0.4s;
+    padding: 0.2%;
+    transition: 0.4s;
     border-radius: 50%;
 }
+
 @mixin centerdBox($justifyContent) {
     display: flex;
     align-items: center;
     justify-content: $justifyContent;
 }
 
-.contactContent{
+.contactContainer {
+    @include common.paddingSectionLg;
+    background-color: common.$colorSection;
+}
+
+.contactContent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.social{
-    >p{
+
+.social {
+    >p {
         color: common.$textColor;
     }
 }
-.iconSocial{
+
+.iconSocial {
     font-size: 40px;
     margin-right: 1.3%;
     cursor: pointer;
 }
-.social{
+
+.social {
     width: 100%;
 }
-.listSocial, .phone{
+
+.listSocial,
+.phone {
     display: flex;
     justify-content: center;
 }
-#iconFB{
-  color: #2374E1;
+
+#iconFB {
+    color: #2374E1;
 }
-#iconInsta{
-  color:  #ea4c89;
+
+#iconInsta {
+    color: #ea4c89;
 }
-#iconGit{
+
+#iconGit {
     color: #333;
 }
-#iconTwiter{
+
+#iconTwiter {
     color: #1da1f2;
 }
-#iconGG{
-    font-size:2rem;
+
+#iconGG {
+    font-size: 2rem;
 }
-#iconGG{
+
+#iconGG {
     color: #dd4b39;
 }
-#iconGG, #iconTwiter, #iconGit, #iconInsta, #iconFB{
-   @include customCommonIcon;
+
+#iconGG,
+#iconTwiter,
+#iconGit,
+#iconInsta,
+#iconFB {
+    @include customCommonIcon;
 }
-#iconTwiter:hover, #iconGit:hover, #iconInsta:hover, #iconFB:hover{
+
+#iconTwiter:hover,
+#iconGit:hover,
+#iconInsta:hover,
+#iconFB:hover {
     @include hoverIcon;
 }
-.myPhoneNumber{
-   color: common.$main-color1;
+
+.myPhoneNumber {
+    color: common.$main-color1;
 }
-.phone{
-    >p{
+
+.phone {
+    >p {
         color: common.$textColor;
         font-size: common.$fontSizeNormalTextLarge;
     }
 }
-.divGmail{
+
+.divGmail {
     display: flex;
     align-items: center;
     margin-left: 1%;
-    p{
+
+    p {
         color: white;
     }
 }
+
 @media only screen and (max-width: 480px) {
-    .iconSocial{
+    .iconSocial {
         font-size: 30px;
     }
-    .phone{
+
+    .phone {
         display: block;
-        >p{
+
+        >p {
             font-size: common.$fontSizeNormalTextSmall;
             @include centerdBox(center);
             margin-bottom: 0 !important;
         }
-        .divGmail{
+
+        .divGmail {
             @include centerdBox(center);
-            #iconGG{
+
+            #iconGG {
                 font-size: 1.4rem;
             }
-            >p{
+
+            >p {
                 font-size: common.$fontSizeNormalTextSmall;
             }
         }

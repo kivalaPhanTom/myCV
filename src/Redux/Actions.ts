@@ -34,3 +34,4 @@ export const setListExperience = createAction<listExperienceObject[]>(ACTION_TYP
 export const setListSkills = createAction<listSkillsObject[]>(ACTION_TYPES.SET_LIST_SKILLS)
 export const setListPortfolio = createAction<listPortfolioObject[]>(ACTION_TYPES.SET_LIST_PORTFOLIO)
 export const getCVInfo = createAction<{}>(ACTION_TYPES.GET_CV_INFO)
+export const setListEducation = createAction<{}>(ACTION_TYPES.SET_LIST_EDUCATION)

@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useCallback} from 'react'
 import styles from './Header.module.scss'
 import { useSelector, useDispatch } from 'react-redux';
-import {HOME_MENU, SKILLS_MENU, EXPERIENCE_MENU, PORTFOLIO_MENU, CONTACT_MENU} from '../commonParams/commonParams'
+import {HOME_MENU, SKILLS_MENU, EXPERIENCE_MENU, PORTFOLIO_MENU, CONTACT_MENU, EDUCATION_MENU} from '../commonParams/commonParams'
 import * as cvActions  from "../Redux/Actions";
 import { AiOutlineMenuFold, AiOutlineClose} from "react-icons/ai";
 
@@ -65,6 +65,12 @@ function Header() {
                      <div >
                         <p className={styles['p_menuItem']} onClick={handleGoToHome}>Home</p>
                         <div className={styles[HOME_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
+                     </div>
+               </li>
+               <li>
+                     <div >
+                        <p className={styles['p_menuItem']} onClick={()=>handleGoToSection('education', EDUCATION_MENU)}>Education</p>
+                        <div className={styles[EDUCATION_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
                      </div>
                </li>
                <li>

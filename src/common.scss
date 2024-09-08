@@ -11,6 +11,12 @@ $fontSizeNormalTextSmall: 13px;
 $fontSizeTitleSectionLarge: 25px;
 $fontSizeTitleSectionMedium: 20px;
 $fontSizeTitleSectionMedium: 16px;
-*{
+$colorSection: #1b1e2f;
+
+@mixin paddingSectionLg {
+    padding: 4rem;
+}
+
+* {
     font-family: 'Open Sans', sans-serif;
 }

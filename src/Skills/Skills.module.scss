@@ -1,6 +1,7 @@
 @use '../common.scss';
 .skillsContainer{
     width: 100%;
+    @include common.paddingSectionLg;
 }
 .skillsContainer{
     width: 100%;
@@ -38,7 +39,6 @@
 }
 .skillItem{
     width: 10%;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;

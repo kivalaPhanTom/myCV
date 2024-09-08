@@ -11,6 +11,7 @@ type listExperienceObject={
     toTime:string;
     role:string;
     detail:string;
+    img:string;
 }
 
 function Experience() {
@@ -29,6 +30,7 @@ function Experience() {
                               toTime = {item.toTime}
                               role = {item.role}
                               detail = {item.detail}
+                              img = {item.img}
                             />
                         </div>
                     ))
@@ -37,6 +39,5 @@ function Experience() {
         </div>
     )
 }
-
 
 export default Experience

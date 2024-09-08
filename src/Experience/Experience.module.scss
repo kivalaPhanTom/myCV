@@ -1,6 +1,8 @@
 @use '../common.scss';
 .experienceContainer{
-    width: 100%;
+    // width: 100%;
+    @include common.paddingSectionLg;
+    background-color: common.$colorSection;
 }
 .experienceContainer{
     >p{ 
@@ -28,6 +30,9 @@
     width: 35%;
 }
 .note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     >p{
         text-align: center;
         font-weight: 550;
@@ -69,7 +74,13 @@
     color: common.$textColor;
     font-size: common.$fontSizeNormalTextLarge;
 }
-
+.timeLineNoDetail{
+    width: 50% !important;
+    margin-left: 10%;
+}
+.noDetail{
+    width: 30%;
+}
 @media only screen and (max-width: 768px) {
     .role{
         font-size: common.$fontSizeNormalTextLarge;
@@ -113,4 +124,10 @@
     .roleDetail{
         font-size: common.$fontSizeNormalTextSmall;
     }
+}
+.logo{
+    // max-width: 3rem;
+    width: auto;
+    height: 28px;
+    margin-right: 1rem;
 }
