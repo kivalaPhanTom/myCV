@@ -1,8 +1,10 @@
-import React from 'react'
-import { Chrono } from "react-chrono";
+import React, {useState} from 'react'
 import SkillItem from './SkillItem'
 import styles from './Skills.module.scss'
 import {useSelector } from 'react-redux'
+import type { StepsProps } from 'antd';
+import { Popover, Steps, Tooltip  } from 'antd';
+import type { TooltipProps } from 'antd';
 
 type listSkillsObject={
   key:string;
@@ -11,6 +13,7 @@ type listSkillsObject={
 }
 
 function ListSkill() {
+  const [mode, setMode] = useState<'left' | 'alternate' | 'right'>('left');
   const listSkills = useSelector((state:{CVSlice:{listSkills:listSkillsObject[]}})=> state.CVSlice.listSkills)
   const data = [
     {
@@ -28,23 +31,53 @@ function ListSkill() {
         The following month, RAF Fighter Command airfields and aircraft factories came under attack. Under the dynamic direction of Lord Beaverbrook, production of Spitfire and Hurricane fighters increased, and despite its losses in pilots and planes, the RAF was never as seriously weakened as the Germans supposed.`
     }
   ];
+  const customDot: StepsProps['progressDot'] = (dot, { status, index }) => (
+    <Tooltip 
+    placement="top"
+      open={true}
+      overlayStyle={{
+        background:"none"
+        // borderRadius:"50%",
+        // background:"red",
+        // height:"40px",
+        // width:"40px"
+      }}
+      arrow = {false}
+      overlayInnerStyle={{
+         background:"none",
+         boxShadow:"none"
+      }}
+      title={<div>
+        sdsdsdsd
+        <img src="https://res.cloudinary.com/dvvi0pivw/image/upload/v1679798292/CV%20Image/pngwing.com_d7tpbn.png" 
+        style={{width:"10px", height:"10px"}}/>
+        </div>}
+    >
+      {dot}
+    </Tooltip>
+  );
   return (
     <div className={styles['listSkill']}>
-       <Chrono
-          items={data}
-          mode="HORIZONTAL"
-          enableLayoutSwitch = {false}
-          enableQuickJump ={false}
-          disableToolbar ={ true}
-          // showAllCardsHorizontal
-          // cardWidth={450}
-          // cardHeight={300}
-          // contentDetailsHeight={100}
-          // fontSizes={{
-          //   title: "1rem"
-          // }}
-          // slideShow
-        />
+        <Steps
+      // progressDot
+      progressDot={customDot}
+      current={1}
+      items={[
+        {
+          title: 'Finished',
+          description:<button>sdsdsdsdsd</button>,
+        },
+        {
+          title: 'In Progress',
+          description: 'This is a description.',
+        },
+        {
+          title: 'Waiting',
+          description: 'This is a description.',
+        },
+      ]}
+    />
+    
       {
         listSkills.map((item,index)=>(
           <SkillItem key={index} order={item.key} name={item.name} img={item.img}/>
