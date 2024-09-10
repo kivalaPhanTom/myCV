@@ -59,31 +59,7 @@
         }
     }
 }
-.titleSkill{
-    
-}
-.skillItem {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.3%;
-}
 
-.divSkillName {
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    margin-top: 0.5%;
-}
-
-.skillName {
-    text-align: center;
-    color: common.$textColor;
-    font-size: common.$fontSizeNormalTextLarge;
-    margin-left: auto;
-    margin-right: auto;
-}
 .pointMarker{
     position: relative;
     width: 80px;
@@ -146,10 +122,7 @@
 }
 
 @media only screen and (max-width: 989px) {
-    .circleImg {
-        width: 70px;
-        height: 70px;
-    }
+   
 }
 
 @media only screen and (max-width: 768px) {

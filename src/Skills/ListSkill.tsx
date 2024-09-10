@@ -55,12 +55,6 @@ function ListSkill() {
         current={1}
         items={convertedData}
       />
-
-      {/* {
-        listSkills.map((item, index) => (
-          <SkillItem key={index} order={item.key} name={item.name} img={item.img} />
-        ))
-      } */}
     </div>
   )
 }
