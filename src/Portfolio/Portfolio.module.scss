@@ -23,16 +23,34 @@ $borderRadiusPortfolioSmall: 8px;
     width: 100%;
     // border-radius: $borderRadiusPortfolio;
     height: 100%;
-    object-fit: scale-down;
+    // object-fit: scale-down;
+    object-position: top;
+     object-fit: cover;
+    // display: block;
+    z-index: 100;
+    /* background-size: cover; */
+    left: 0;
+    top: 0;
+    position: absolute;
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
 }
 .itemContainer{
     width: 94%;
     // border-radius: $borderRadiusPortfolio;
     // position: relative;
     // height: 16rem;
+    margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+        margin-top:-25px;
+        transition: 0.4s;
+    }
 }
 .item{
     width: 20%;
@@ -43,10 +61,14 @@ $borderRadiusPortfolioSmall: 8px;
     // top: 0;
     // left: 0;
     z-index: 3;
-    height: 100%;
+    position: relative;
+    padding-bottom: 100%;
+    height:0;
     width: 100%;
+    
 }
 .infoPortfolio{
+    margin-top: 10px;
     // position: absolute;
     // top: 0;
     // left: 0;
@@ -69,6 +91,8 @@ background-color: white;
     >p{
         color: common.$main-color;
         font-size: common.$fontSizeNormalTextLarge;
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
     }
 }
 .infoPortfolio:hover{
@@ -79,24 +103,37 @@ background-color: white;
 //         color: common.$textColor !important;
 //     }
 // }
-@media only screen and (max-width: 1300px) {
-    .itemContainer{
-        height: 13rem;
-    }
-}
+// @media only screen and (max-width: 1300px) {
+//     .itemContainer{
+//         height: 13rem;
+//     }
+// }
 @media only screen and (max-width: 991px) {
-    .itemContainer{
-        height: 11rem;
+    .item{
+        width: 25%;
     }
+    // .itemContainer{
+    //     height: 11rem;
+    // }
 }
 @media only screen and (max-width: 768px) {
-    .itemContainer{
-        height: 8rem;
-    }
+    // .itemContainer{
+    //     height: 8rem;
+    // }
     .infoPortfolio{
         >p{
             font-size: common.$fontSizeNormalTextMedium;
         }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .item{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .portfolioContainer{
+        @include common.paddingSectionsm;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -109,17 +146,17 @@ background-color: white;
         }
     }
 }
-@media only screen and (max-width: 380px) {
-    .itemContainer{
-        height: 6rem;
-    }
-    #imgBackgroupPortfolio{
-        border-radius: $borderRadiusPortfolioSmall;
-    }
-    .itemContainer{
-        border-radius: $borderRadiusPortfolioSmall;
-    }
-    .infoPortfolio{
-        border-radius: $borderRadiusPortfolioSmall;
-    }
-}
+// @media only screen and (max-width: 380px) {
+//     // .itemContainer{
+//     //     height: 6rem;
+//     // }
+//     // #imgBackgroupPortfolio{
+//     //     border-radius: $borderRadiusPortfolioSmall;
+//     // }
+//     // .itemContainer{
+//     //     border-radius: $borderRadiusPortfolioSmall;
+//     // }
+//     // .infoPortfolio{
+//     //     border-radius: $borderRadiusPortfolioSmall;
+//     // }
+// }

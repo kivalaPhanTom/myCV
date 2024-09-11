@@ -1,38 +1,53 @@
 @use '../common.scss';
-.downloadCV{
+
+.downloadCV {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-top: 10%;
 }
-.btnDownload{
-    background-color:common.$main-color1;  
-    padding: 0.7rem; 
+
+.btnDownload {
+    background-color: common.$main-color1;
+    padding: 0.7rem;
     border-radius: 3px;
     cursor: pointer;
     font-size: common.$fontSizeNormalTextLarge;
-    >p{
-       color: common.$textColor;
-       margin: 0;
-       cursor: pointer;
-       font-weight: 600;
+
+    >p {
+        color: common.$textColor;
+        margin: 0;
+        cursor: pointer;
+        font-weight: 600;
     }
+
     transition: 0.4s;
 }
-.btnDownload:hover{
+
+.btnDownload:hover {
     background-color: common.$textColor;
-    >p{
-        color: common.$main-color1; 
+
+    >p {
+        color: common.$main-color1;
     }
+
     transition: 0.4s;
 }
+
 @media only screen and (max-width: 768px) {
-    .btnDownload{
+    .btnDownload {
         font-size: common.$fontSizeNormalTextMedium;
     }
 }
-@media only screen and (max-width: 480px) {
-   .downloadCV{
-     justify-content: center;
-   }
+
+@media only screen and (max-width: 768px) {
+    .downloadCV {
+        justify-content: center;
+    }
 }
+
+// @media only screen and (max-width: 480px) {
+//     .downloadCV {
+//         justify-content: center;
+//     }
+// }

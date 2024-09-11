@@ -20,26 +20,38 @@ function Education() {
         <div className={styles['eduContainer']}>
             <TitleSection title1='' title2='Education' />
             <div className={styles['eduContent']}>
-                <AliceCarousel
-                    disableButtonsControls={true}
-                    disableDotsControls={listEducation.length > 1 ? false : true}
-                    autoPlay={listEducation.length > 1 ? true : false}
-                    autoPlayInterval={3000}
-                    infinite={listEducation.length > 1 ? true : false}
-                >
-                    {
-                        listEducation.map(e => (
-                            <EducationItem
-                                key={e.key}
-                                detail={e.detail}
-                                fromTime={e.fromTime}
-                                img={e.img}
-                                name={e.name}
-                                toTime={e.toTime}
-                            />
-                        ))
-                    }
-                </AliceCarousel>
+                {
+                    listEducation.length > 1 ? <>
+                        <AliceCarousel
+                            disableButtonsControls={true}
+                            disableDotsControls={listEducation.length > 1 ? false : true}
+                            autoPlay={listEducation.length > 1 ? true : false}
+                            autoPlayInterval={3000}
+                            infinite={listEducation.length > 1 ? true : false}
+                            autoWidth={true}
+                        >
+                            {
+                                listEducation.map(e => (
+                                    <EducationItem
+                                        key={e.key}
+                                        detail={e.detail}
+                                        fromTime={e.fromTime}
+                                        img={e.img}
+                                        name={e.name}
+                                        toTime={e.toTime}
+                                    />
+                                ))
+                            }
+                        </AliceCarousel>
+                    </> : <EducationItem
+                        detail={listEducation[0]?.detail || ''}
+                        fromTime={listEducation[0]?.fromTime || ''}
+                        img={listEducation[0]?.img || ''}
+                        name={listEducation[0]?.name || ''}
+                        toTime={listEducation[0]?.toTime || ''}
+                    />
+                }
+
             </div>
         </div>
     )

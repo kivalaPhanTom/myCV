@@ -16,7 +16,9 @@ $colorSection: #1b1e2f;
 @mixin paddingSectionLg {
     padding: 4rem;
 }
-
+@mixin paddingSectionsm {
+    padding: 2rem 0.5rem;
+}
 * {
     font-family: 'Open Sans', sans-serif;
 }

@@ -56,20 +56,56 @@
         top: 35%;
     }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1300px) {
+    .avtBlockAfter{
+        right: 4%;
+        top: 24%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .avtBlockAfter{
+        right: 1%;
+        top: 27%;
+    }
+}
+@media only screen and (max-width: 768px) {
     .avatarMain{
-        height: 75vw;
+        height: 60vw;
     }
     .avtBlockBefore{
         width: 61%;
-        height: 61vw;
+        height: 55vw;
         top: 0;
         left: 10%;
     }
     .avtBlockAfter{
         width: 57%;
-        height: 45vw;
-        right: 11%;
-        bottom: 0;
+        height: 55vw;
+        right: 18%;
+        top: 8.5%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .avtBlockAfter{
+        width: 57%;
+        height: 55vw;
+        right: 15.5%;
+        top: 10.5%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .avatarMain{
+        height: 88vw;
+    }
+    .avtBlockBefore{
+        height: 83vw;
+        left: 0%;
+        width: 90%;
+    }
+    .avtBlockAfter{
+        height: 83vw;
+        width: 90%;
+        left: 12%;
+        top: 9%;
     }
 }

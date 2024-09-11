@@ -23,8 +23,9 @@ function App() {
   return (
     <div className={styles['App']}>
       <div className={styles['introPage']}>
-        <Header />
+        {/* <Header /> */}
         <div id="home" className={styles['intro']}>
+          <Header />
           <div className={styles['introContainer']}>
             <div className={styles['avatar']}>
               <Avatar />
@@ -41,14 +42,14 @@ function App() {
         <div id="education" className={styles['education']}>
           <Education />
         </div>
-
+        {/* 
         <div id="skills" className={styles['skills']}>
           <Skills />
-        </div>
+        </div> */}
 
-        <div id="experience" className={styles['experience']}>
+        {/* <div id="experience" className={styles['experience']}>
           <Experience />
-        </div>
+        </div> */}
 
         <div id="portfolio" className={styles['portfolio']}>
           <Portfolio />

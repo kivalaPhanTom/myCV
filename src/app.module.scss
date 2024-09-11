@@ -33,6 +33,7 @@ body{
 .avatar{
     width: 40%;
     display: flex;
+    align-items: center;
     margin-top: 5%;
 }
 .welcomeIntro{
@@ -40,16 +41,24 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5rem;
 }
 // .about,.experience, .contact{
 //     margin-top: 5%;
 // }
-@media only screen and (max-width: 480px) {
+
+// @media only screen and (max-width: 768px) {
+//     .introContainer{
+//         height: 90%;
+//         display: block;
+//     }
+// }
+@media only screen and (max-width: 768px) {
     .intro{
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 90%;
+        height: 100%;
     }
     .introContainer{
         height: 90%;
@@ -65,5 +74,6 @@ body{
     }
     .welcomeIntro{
         width: 100%;
+        margin-top: 3rem;
     }
 }

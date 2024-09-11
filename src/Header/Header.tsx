@@ -63,26 +63,8 @@ function Header() {
             <ul className={styles['menuList']}>
                <li>
                      <div >
-                        <p className={styles['p_menuItem']} onClick={handleGoToHome}>Home</p>
-                        <div className={styles[HOME_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
-                     </div>
-               </li>
-               <li>
-                     <div >
-                        <p className={styles['p_menuItem']} onClick={()=>handleGoToSection('education', EDUCATION_MENU)}>Education</p>
-                        <div className={styles[EDUCATION_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
-                     </div>
-               </li>
-               <li>
-                     <div>
-                        <p className={styles['p_menuItem']} onClick={()=>handleGoToSection('skills', SKILLS_MENU)}>Skills</p>
-                        <div className={styles[SKILLS_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
-                     </div>
-               </li>
-               <li>
-                     <div >
-                        <p className={styles['p_menuItem']} onClick={()=>handleGoToSection('experience', EXPERIENCE_MENU)}>Experience</p>
-                        <div className={styles[EXPERIENCE_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
+                        <p className={styles['p_menuItem']} onClick={()=>handleGoToSection('contact', CONTACT_MENU)}>Contact</p>
+                        <div className={styles[CONTACT_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
                      </div>
                </li>
                <li>
@@ -93,10 +75,29 @@ function Header() {
                </li>
                <li>
                      <div >
-                        <p className={styles['p_menuItem']} onClick={()=>handleGoToSection('contact', CONTACT_MENU)}>Contact</p>
-                        <div className={styles[CONTACT_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
+                        <p className={styles['p_menuItem']} onClick={()=>handleGoToSection('experience', EXPERIENCE_MENU)}>Experience</p>
+                        <div className={styles[EXPERIENCE_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
                      </div>
                </li>
+               <li>
+                     <div>
+                        <p className={styles['p_menuItem']} onClick={()=>handleGoToSection('skills', SKILLS_MENU)}>Skills</p>
+                        <div className={styles[SKILLS_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
+                     </div>
+               </li>
+               <li>
+                     <div >
+                        <p className={styles['p_menuItem']} onClick={()=>handleGoToSection('education', EDUCATION_MENU)}>Education</p>
+                        <div className={styles[EDUCATION_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
+                     </div>
+               </li>
+               <li>
+                     <div >
+                        <p className={styles['p_menuItem']} onClick={handleGoToHome}>Home</p>
+                        <div className={styles[HOME_MENU === MenuItemSelected ? 'textDecoration' :'']}></div>
+                     </div>
+               </li>
+            
             </ul>
          </div>
          <div className={styles['menuMobile']}>
