@@ -21,47 +21,49 @@ $borderRadiusPortfolioSmall: 8px;
 }
 #imgBackgroupPortfolio{
     width: 100%;
-    border-radius: $borderRadiusPortfolio;
+    // border-radius: $borderRadiusPortfolio;
     height: 100%;
     object-fit: scale-down;
 }
 .itemContainer{
     width: 94%;
-    border-radius: $borderRadiusPortfolio;
-    position: relative;
-    height: 16rem;
+    // border-radius: $borderRadiusPortfolio;
+    // position: relative;
+    // height: 16rem;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
 }
 .item{
-    width: 33.1%;
+    width: 20%;
     margin-bottom: 20px;
 }
 .backgroundPortfolio{
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
     z-index: 3;
     height: 100%;
     width: 100%;
 }
 .infoPortfolio{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 4;
-    background-color: common.$textColor;
-    opacity: 0.5;
-    height: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // z-index: 4;
+    // background-color: common.$textColor;
+    // opacity: 0.5;
+
+background-color: white;
+    // height: 100%;
     width: 100%;
-    border-radius: $borderRadiusPortfolio;
+    // border-radius: $borderRadiusPortfolio;
     display: flex;
     justify-content: center;
     align-items: center;
    
-    background: linear-gradient(to right, black 50%, common.$textColor 50%);
-    background-size: 200% 100%;
+    // background: linear-gradient(to right, black 50%, common.$textColor 50%);
+    // background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
     >p{
@@ -72,11 +74,11 @@ $borderRadiusPortfolioSmall: 8px;
 .infoPortfolio:hover{
     background-position: left bottom;
 }
-.infoPortfolio:hover{
-    >p{
-        color: common.$textColor !important;
-    }
-}
+// .infoPortfolio:hover{
+//     >p{
+//         color: common.$textColor !important;
+//     }
+// }
 @media only screen and (max-width: 1300px) {
     .itemContainer{
         height: 13rem;
