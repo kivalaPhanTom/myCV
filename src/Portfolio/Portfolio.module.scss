@@ -1,162 +1,122 @@
 @use '../common.scss';
 $borderRadiusPortfolio: 20px;
 $borderRadiusPortfolioSmall: 8px;
-.portfolioContainer{
-    // width: 100%;
+
+.portfolioContainer {
     @include common.paddingSectionLg;
-    >p{ 
-      font-size: common.$fontSizeTitleChildLarge;
-      color: common.$textColor;
+
+    >p {
+        font-size: common.$fontSizeTitleChildLarge;
+        color: common.$textColor;
     }
 }
-.portfolioContent{
+
+.portfolioContent {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-.portfolioContentContainer{
+
+.portfolioContentContainer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-#imgBackgroupPortfolio{
+
+#imgBackgroupPortfolio {
     width: 100%;
-    // border-radius: $borderRadiusPortfolio;
     height: 100%;
-    // object-fit: scale-down;
     object-position: top;
-     object-fit: cover;
-    // display: block;
+    object-fit: cover;
     z-index: 100;
-    /* background-size: cover; */
     left: 0;
     top: 0;
     position: absolute;
-    // width: 100%;
-    // height: 100%;
-    // object-fit: cover;
 }
-.itemContainer{
+
+.itemContainer {
     width: 94%;
-    // border-radius: $borderRadiusPortfolio;
-    // position: relative;
-    // height: 16rem;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     transition: 0.4s;
-    &:hover{
+
+    &:hover {
         box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
-        margin-top:-25px;
+        margin-top: -25px;
         transition: 0.4s;
     }
 }
-.item{
+
+.item {
     width: 20%;
     margin-bottom: 20px;
 }
-.backgroundPortfolio{
-    // position: absolute;
-    // top: 0;
-    // left: 0;
+
+.backgroundPortfolio {
     z-index: 3;
     position: relative;
     padding-bottom: 100%;
-    height:0;
+    height: 0;
     width: 100%;
-    
-}
-.infoPortfolio{
-    margin-top: 10px;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // z-index: 4;
-    // background-color: common.$textColor;
-    // opacity: 0.5;
 
-background-color: white;
-    // height: 100%;
+}
+
+.infoPortfolio {
+    margin-top: 10px;
+    background-color: white;
     width: 100%;
-    // border-radius: $borderRadiusPortfolio;
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    // background: linear-gradient(to right, black 50%, common.$textColor 50%);
-    // background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
-    >p{
+
+    >p {
         color: common.$main-color;
         font-size: common.$fontSizeNormalTextLarge;
         margin-top: 0.7rem;
         margin-bottom: 0.7rem;
     }
 }
-.infoPortfolio:hover{
+
+.infoPortfolio:hover {
     background-position: left bottom;
 }
-// .infoPortfolio:hover{
-//     >p{
-//         color: common.$textColor !important;
-//     }
-// }
-// @media only screen and (max-width: 1300px) {
-//     .itemContainer{
-//         height: 13rem;
-//     }
-// }
+
 @media only screen and (max-width: 991px) {
-    .item{
+    .item {
         width: 25%;
     }
-    // .itemContainer{
-    //     height: 11rem;
-    // }
-}
-@media only screen and (max-width: 768px) {
-    // .itemContainer{
-    //     height: 8rem;
-    // }
-    .infoPortfolio{
-        >p{
+
+    .infoPortfolio {
+        >p {
             font-size: common.$fontSizeNormalTextMedium;
         }
     }
 }
+
 @media only screen and (max-width: 600px) {
-    .item{
+    .item {
         width: 50%;
     }
 }
+
 @media only screen and (max-width: 575px) {
-    .portfolioContainer{
+    .portfolioContainer {
         @include common.paddingSectionsm;
     }
 }
+
 @media only screen and (max-width: 480px) {
-    .item{
+    .item {
         width: 50%;
     }
-    .infoPortfolio{
-        >p{
+
+    .infoPortfolio {
+        >p {
             font-size: common.$fontSizeNormalTextSmall;
         }
     }
 }
-// @media only screen and (max-width: 380px) {
-//     // .itemContainer{
-//     //     height: 6rem;
-//     // }
-//     // #imgBackgroupPortfolio{
-//     //     border-radius: $borderRadiusPortfolioSmall;
-//     // }
-//     // .itemContainer{
-//     //     border-radius: $borderRadiusPortfolioSmall;
-//     // }
-//     // .infoPortfolio{
-//     //     border-radius: $borderRadiusPortfolioSmall;
-//     // }
-// }

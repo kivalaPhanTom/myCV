@@ -1,8 +1,7 @@
-import React from 'react'
 import DownloadCV from '../DownloadCV/DownloadCV'
 import styles from './WelcomeIntro.module.scss'
-import Typewriter from 'react-ts-typewriter';
-import {useSelector } from 'react-redux';
+import Typewriter from 'react-ts-typewriter'
+import {useSelector } from 'react-redux'
 
 function WelcomeIntro() {
   const ownerName = useSelector((state:{CVSlice:{ownerName:string}})=> state.CVSlice.ownerName) 
@@ -31,7 +30,5 @@ function WelcomeIntro() {
     </div>
   )
 }
-
-
 
 export default WelcomeIntro

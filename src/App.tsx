@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Header from './Header/Header';
 import styles from './app.module.scss'
 import Avatar from './Avatar/Avatar';
@@ -23,7 +23,6 @@ function App() {
   return (
     <div className={styles['App']}>
       <div className={styles['introPage']}>
-        {/* <Header /> */}
         <div id="home" className={styles['intro']}>
           <Header />
           <div className={styles['introContainer']}>
@@ -38,18 +37,17 @@ function App() {
       </div>
 
       <div className={styles['appContainer']}>
-
         <div id="education" className={styles['education']}>
           <Education />
         </div>
-        {/* 
+
         <div id="skills" className={styles['skills']}>
           <Skills />
-        </div> */}
+        </div>
 
-        {/* <div id="experience" className={styles['experience']}>
+        <div id="experience" className={styles['experience']}>
           <Experience />
-        </div> */}
+        </div>
 
         <div id="portfolio" className={styles['portfolio']}>
           <Portfolio />
@@ -58,7 +56,6 @@ function App() {
         <div id="contact" className={styles['contact']}>
           <Contact />
         </div>
-
       </div>
       {
         isLoading ? (

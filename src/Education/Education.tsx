@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import TitleSection from '../TitleSection/TitleSection'
 import styles from './Education.module.scss'
 import EducationItem from './EducationItem'
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
 
 type listEducationObject = {
     key: string;
@@ -56,6 +55,5 @@ function Education() {
         </div>
     )
 }
-
 
 export default Education

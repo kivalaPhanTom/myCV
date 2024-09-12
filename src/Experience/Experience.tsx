@@ -1,8 +1,7 @@
-import React from 'react'
 import TitleSection from '../TitleSection/TitleSection'
 import styles from './Experience.module.scss'
 import ExperienceItem from './ExperienceItem'
-import {useSelector } from 'react-redux';
+import {useSelector } from 'react-redux'
 
 type listExperienceObject={
     key:string;

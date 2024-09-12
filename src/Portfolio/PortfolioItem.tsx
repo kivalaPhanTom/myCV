@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Portfolio.module.scss'
 
 type listPortfolioObject={
@@ -9,9 +8,7 @@ type listPortfolioObject={
 }
 
 function PortfolioItem({key, name, img, link}:listPortfolioObject) {
-  const handleRedirectPortfoioPage =()=>{
-    window.open(link, '_blank');
-  }
+  const handleRedirectPortfoioPage =()=>window.open(link, '_blank')
   return (
     <div className={styles['itemContainer']} onClick={handleRedirectPortfoioPage}>
         <div className={styles['backgroundPortfolio']}>

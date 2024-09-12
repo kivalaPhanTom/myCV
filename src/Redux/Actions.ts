@@ -1,5 +1,5 @@
-import { createAction } from '@reduxjs/toolkit';
-import * as ACTION_TYPES from './ActionTypes';
+import { createAction } from '@reduxjs/toolkit'
+import * as ACTION_TYPES from './ActionTypes'
 
 type listExperienceObject={
     key:string;

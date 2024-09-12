@@ -1,9 +1,9 @@
-import { notification } from 'antd';
+import { notification } from 'antd'
 
 export const MessageCommon = {
     openNotificationSuccess,
     openNotificationError
-};
+}
 
 function openNotificationSuccess(title:string) {
     notification.success({
@@ -11,8 +11,8 @@ function openNotificationSuccess(title:string) {
       description:'',
       className: 'success-mess',
       duration: 4,
-    });
-};
+    })
+}
 
 function openNotificationError(title:string) {
     notification.error({
@@ -20,5 +20,5 @@ function openNotificationError(title:string) {
       description:'',
       className: 'success-mess',
       duration: 4,
-    });
-};
+    })
+}

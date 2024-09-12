@@ -1,6 +1,5 @@
-import React from 'react'
 import styles from './Experience.module.scss'
-import { AiFillRightCircle } from "react-icons/ai";
+import { AiFillRightCircle } from 'react-icons/ai'
 
 type listExperienceObject = {
   order: string;
@@ -15,7 +14,7 @@ type listExperienceObject = {
 function ExperienceItem({ order, company, fromTime, toTime, role, detail, img }: listExperienceObject) {
   return (
     <div className={styles['expItemContainer']}>
-      <div className={styles['timeLine']+' '+styles[detail ? '':'timeLineNoDetail']}>
+      <div className={styles['timeLine'] + ' ' + styles[detail ? '' : 'timeLineNoDetail']}>
         <div className={styles['time']}>
           <p>{fromTime} - {toTime !== '' ? toTime : "Now"}</p>
         </div>
@@ -28,7 +27,7 @@ function ExperienceItem({ order, company, fromTime, toTime, role, detail, img }:
           <p>{company}</p>
         </div>
       </div>
-      <div className={styles['detail']+' '+styles[detail ? '':'noDetail']}>
+      <div className={styles['detail'] + ' ' + styles[detail ? '' : 'noDetail']}>
         <p className={styles['role']}>{role}</p>
         <p className={styles['roleDetail']}>{detail}</p>
       </div>

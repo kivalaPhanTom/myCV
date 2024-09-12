@@ -5,7 +5,6 @@ html{
 .App{
     background-color: common.$main-color;
     min-height: 100vh;
-    // padding-bottom: 2%;
 }
 body{
     margin: 0;
@@ -21,7 +20,6 @@ body{
     height: 100%;
 }
 .appContainer{
-    // width: 95%;
     margin-left: auto;
     margin-right: auto;
     clear: both;
@@ -29,6 +27,7 @@ body{
 .introContainer{
     display: flex;
     height: 100%;
+    width: 100%;
 }
 .avatar{
     width: 40%;
@@ -43,16 +42,6 @@ body{
     justify-content: center;
     margin-top: 5rem;
 }
-// .about,.experience, .contact{
-//     margin-top: 5%;
-// }
-
-// @media only screen and (max-width: 768px) {
-//     .introContainer{
-//         height: 90%;
-//         display: block;
-//     }
-// }
 @media only screen and (max-width: 768px) {
     .intro{
         display: flex;

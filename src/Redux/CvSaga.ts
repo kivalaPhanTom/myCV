@@ -1,7 +1,7 @@
-import { call, put, takeEvery, all} from 'redux-saga/effects';
-import * as cvAction from './Actions';
+import { call, put, takeEvery, all} from 'redux-saga/effects'
+import * as cvAction from './Actions'
 import { Service } from '../Services/Services'
-import { MessageCommon } from "../Messages/Messages"
+import { MessageCommon } from '../Messages/Messages'
 
 export interface ResponseGenerator{
     config?:any,
@@ -14,7 +14,7 @@ export interface ResponseGenerator{
 function* handleFecthCVInfo(action:any){
     try {
         yield put(cvAction.setLoading(true))
-        const res:ResponseGenerator = yield call(Service.getCVInfoFromApi);
+        const res:ResponseGenerator = yield call(Service.getCVInfoFromApi)
         yield put(cvAction.setLoading(false))
         const {data, error} = res.data
         if(error){

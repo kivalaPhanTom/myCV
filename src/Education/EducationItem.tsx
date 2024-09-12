@@ -1,5 +1,3 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
 import styles from './Education.module.scss'
 type eduItemType = {
     detail: string;
@@ -29,6 +27,5 @@ function EducationItem(props: eduItemType) {
         </div>
     )
 }
-
 
 export default EducationItem

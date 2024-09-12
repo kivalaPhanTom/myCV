@@ -2,7 +2,6 @@
 
 .skillsContainer {
     width: 100%;
-    @include common.paddingSectionLg;
 }
 
 .skillsContainer {
@@ -36,31 +35,23 @@
 }
 
 .listSkill {
-    margin-top: 10rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    >div{
-        >div{
-            >div{
-                >div{
-                    &:after{
-                        background-color: common.$main-color1 !important;
-                    }
-                    >span{
-                        >span{
-                            background-color: common.$main-color1 !important;
-                        }
-                    }
-                }
-            }
-        }
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divSkillName {
+    >p {
+        text-align: center;
+        color: common.$textColor;
     }
 }
 
-.pointMarker{
+.pointMarker {
     position: relative;
     width: 80px;
     height: 80px;
@@ -68,22 +59,19 @@
     align-items: center;
     justify-content: center;
 }
-.logoSkillImg{
+
+.logoSkillImg {
     width: 40px;
     height: 40px;
 }
+
 .pin2 {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    // top: 40%;
-    // left: 50%;
-    // margin-left: 115px;
-
     border-radius: 50%;
     background-color: #fff;
-    // border: 8px solid #fff;
     width: 63px;
     height: 63px;
 }
@@ -98,14 +86,17 @@
     border: 23px solid transparent;
     border-top: 25px solid #fff;
 }
-.titleSkill{
+
+.titleSkill {
     color: common.$textColor;
 }
-@media only screen and (min-width: 1208px) {
-    .skillsContainer {
-        width: 50%;
-    }
 
+.skill_item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media only screen and (min-width: 1208px) {
     .skillItem {
         width: 12%;
     }
@@ -121,9 +112,7 @@
     }
 }
 
-@media only screen and (max-width: 989px) {
-   
-}
+@media only screen and (max-width: 989px) {}
 
 @media only screen and (max-width: 768px) {
     .skillName {

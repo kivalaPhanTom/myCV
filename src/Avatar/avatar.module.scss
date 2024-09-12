@@ -1,16 +1,19 @@
 @use '../common.scss';
-.container{
+
+.container {
     width: 80%;
 }
-.avatarMain{
+
+.avatarMain {
     height: 28vw;
     position: relative;
 }
-.avtBlockBefore{
+
+.avtBlockBefore {
     width: 80%;
     height: 26vw;
-    position: absolute ;
-    top:0;
+    position: absolute;
+    top: 0;
     left: 0;
     background-color: #D9D9D9;
     border: 10px solid common.$textColor;
@@ -19,90 +22,106 @@
     justify-content: center;
     align-items: center;
     object-fit: cover;
-    img{
+
+    img {
         width: 100%;
-        height:-webkit-fill-available;
+        height: -webkit-fill-available;
         object-fit: cover;
         object-position: center;
     }
 }
-.avtBlockAfter{
+
+.avtBlockAfter {
     width: 80%;
     height: 22vw;
     background-color: common.$main-color;
-    position: absolute ;
+    position: absolute;
     right: 7%;
     top: 23%;
     border: 8px solid common.$textColor;
     z-index: 2;
 }
+
 @media only screen and (max-width: 768px) {
-    .container{
+    .container {
         width: 90%;
     }
-    .avatarMain{
+
+    .avatarMain {
         height: 30vw;
     }
-    .avtBlockBefore{
+
+    .avtBlockBefore {
         width: 72%;
         height: 31vw;
-        top:0;
+        top: 0;
         left: 0;
     }
-    .avtBlockAfter{
+
+    .avtBlockAfter {
         width: 65%;
         height: 25vw;
         right: 10%;
         top: 35%;
     }
 }
+
 @media only screen and (max-width: 1300px) {
-    .avtBlockAfter{
+    .avtBlockAfter {
         right: 4%;
         top: 24%;
     }
 }
+
 @media only screen and (max-width: 991px) {
-    .avtBlockAfter{
+    .avtBlockAfter {
         right: 1%;
         top: 27%;
     }
 }
+
 @media only screen and (max-width: 768px) {
-    .avatarMain{
+    .avatarMain {
         height: 60vw;
     }
-    .avtBlockBefore{
+
+    .avtBlockBefore {
         width: 61%;
         height: 55vw;
         top: 0;
         left: 10%;
+        min-width: 61%;
     }
-    .avtBlockAfter{
+
+    .avtBlockAfter {
         width: 57%;
         height: 55vw;
         right: 18%;
         top: 8.5%;
     }
 }
+
 @media only screen and (max-width: 600px) {
-    .avtBlockAfter{
+    .avtBlockAfter {
         width: 57%;
         height: 55vw;
         right: 15.5%;
         top: 10.5%;
     }
 }
+
 @media only screen and (max-width: 480px) {
-    .avatarMain{
+    .avatarMain {
         height: 88vw;
     }
-    .avtBlockBefore{
+
+    .avtBlockBefore {
         height: 83vw;
         left: 0%;
         width: 90%;
     }
-    .avtBlockAfter{
+
+    .avtBlockAfter {
         height: 83vw;
         width: 90%;
         left: 12%;

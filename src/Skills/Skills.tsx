@@ -1,4 +1,3 @@
-import React from 'react'
 import TitleSection from '../TitleSection/TitleSection'
 import ListSkill from './ListSkill'
 import styles from './Skills.module.scss'
