@@ -1,12 +1,7 @@
 @use '../common.scss';
 
 .skillsContainer {
-    width: 100%;
     @include common.paddingSectionLg;
-}
-
-.skillsContainer {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
 
