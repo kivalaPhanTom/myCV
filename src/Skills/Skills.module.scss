@@ -2,6 +2,7 @@
 
 .skillsContainer {
     width: 100%;
+    @include common.paddingSectionLg;
 }
 
 .skillsContainer {
@@ -112,7 +113,11 @@
     }
 }
 
-@media only screen and (max-width: 989px) {}
+@media only screen and (max-width: 991px) {
+    .skillsContainer{
+        @include common.paddingSectionsm;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .skillName {
