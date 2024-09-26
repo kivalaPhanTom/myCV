@@ -33,24 +33,24 @@ function Header() {
     
       if (elEdu && elSkill && elEx && elPortfolio && elContact) {
          const posEdu = elEdu.getBoundingClientRect()
-         const startEdu: number = posEdu.top + window.pageYOffset
-         const endEdu: number = posEdu.bottom + window.pageYOffset
+         const startEdu: number = posEdu.top + window.pageYOffset - 80
+         const endEdu: number = posEdu.bottom + window.pageYOffset- 80
 
          const posSkill = elSkill.getBoundingClientRect()
-         const startSkill: number = posSkill.top + window.pageYOffset
-         const endSkill: number = posSkill.bottom + window.pageYOffset
+         const startSkill: number = posSkill.top + window.pageYOffset- 80
+         const endSkill: number = posSkill.bottom + window.pageYOffset- 80
 
          const posEx = elEx.getBoundingClientRect();
-         const startEx: number = posEx.top + window.pageYOffset
-         const endEx: number = posEx.bottom + window.pageYOffset
+         const startEx: number = posEx.top + window.pageYOffset - 80
+         const endEx: number = posEx.bottom + window.pageYOffset - 80
 
          const posPortfolio = elPortfolio.getBoundingClientRect()
-         const startPortfolio: number = posPortfolio.top + window.pageYOffset
-         const endPortfolio: number = posPortfolio.bottom + window.pageYOffset
+         const startPortfolio: number = posPortfolio.top + window.pageYOffset - 80
+         const endPortfolio: number = posPortfolio.bottom + window.pageYOffset - 80
 
          const posContact = elContact.getBoundingClientRect()
-         const startContact: number = posContact.top + window.pageYOffset
-         const endContact: number = posContact.bottom + window.pageYOffset
+         const startContact: number = posContact.top + window.pageYOffset - 80
+         const endContact: number = posContact.bottom + window.pageYOffset - 80
 
          if (y >= startEdu && y <= endEdu) {
             dispatch(cvActions.selectMenuItem(EDUCATION_MENU))
@@ -88,7 +88,7 @@ function Header() {
          const element = document.getElementById(nameSection)
          if (element) {
             const position = element.getBoundingClientRect();
-            const startAbout: number = position.top + window.pageYOffset - 40;
+            const startAbout: number = position.top + window.pageYOffset - 80;
             window.scrollTo({ top: startAbout, behavior: 'smooth' });
          }
       }
