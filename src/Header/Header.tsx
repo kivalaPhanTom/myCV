@@ -105,13 +105,11 @@ function Header() {
                   <li>
                      <div >
                         <p className={styles['p_menuItem'] + ' ' + styles[MenuItemSelected === CONTACT_MENU ? 'active' : 'notActive']} onClick={() => handleGoToSection('contact', CONTACT_MENU)}>Contact</p>
-                        {/* <div className={styles[CONTACT_MENU === MenuItemSelected ? 'textDecoration' : '']}></div> */}
                      </div>
                   </li>
                   <li>
                      <div >
                         <p className={styles['p_menuItem'] + ' ' + styles[MenuItemSelected === PORTFOLIO_MENU ? 'active' : 'notActive']} onClick={() => handleGoToSection('portfolio', PORTFOLIO_MENU)}>Porfolio</p>
-                        {/* <div className={styles[PORTFOLIO_MENU === MenuItemSelected ? 'textDecoration' : '']}></div> */}
                      </div>
                   </li>
                   <li>
@@ -123,19 +121,16 @@ function Header() {
                   <li>
                      <div>
                         <p className={styles['p_menuItem'] + ' ' + styles[MenuItemSelected === SKILLS_MENU ? 'active' : 'notActive']} onClick={() => handleGoToSection('skills', SKILLS_MENU)}>Skills</p>
-                        {/* <div className={styles[SKILLS_MENU === MenuItemSelected ? 'textDecoration' : '']}></div> */}
                      </div>
                   </li>
                   <li>
                      <div >
                         <p className={styles['p_menuItem'] + ' ' + styles[MenuItemSelected === EDUCATION_MENU ? 'active' : 'notActive']} onClick={() => handleGoToSection('education', EDUCATION_MENU)}>Education</p>
-                        {/* <div className={styles[EDUCATION_MENU === MenuItemSelected ? 'textDecoration' : '']}></div> */}
                      </div>
                   </li>
                   <li>
                      <div >
                         <p className={styles['p_menuItem'] + ' ' + styles[MenuItemSelected === 0 ? 'active' : 'notActive']} onClick={handleGoToHome}>Home</p>
-                        {/* <div className={styles[HOME_MENU === MenuItemSelected ? 'textDecoration' : '']}></div> */}
                      </div>
                   </li>
 
@@ -174,9 +169,7 @@ function Header() {
             </div>
          </Drawer>
       </>
-
    )
 }
-
 
 export default Header
