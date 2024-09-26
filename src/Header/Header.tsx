@@ -82,15 +82,13 @@ function Header() {
    }
 
    const handleGoToSection = (nameSection: string, value: number) => {
-      // const element = document.getElementById(nameSection)
-      // if (element) element.scrollIntoView({ behavior: 'smooth' })
       if (nameSection === '') {
          window.scrollTo({ top: 0, behavior: 'smooth' })
       } else {
          const element = document.getElementById(nameSection)
          if (element) {
             const position = element.getBoundingClientRect();
-            const startAbout: number = position.top + window.pageYOffset + 30;
+            const startAbout: number = position.top + window.pageYOffset - 40;
             window.scrollTo({ top: startAbout, behavior: 'smooth' });
          }
       }
