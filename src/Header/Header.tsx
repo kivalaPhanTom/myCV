@@ -96,7 +96,6 @@ function Header() {
       setOpenMenuMobile(false)
    }
    const toggleDrawer = () => setOpenMenuMobile((prevState) => !prevState)
-   console.log('MenuItemSelected:', MenuItemSelected)
    return (
       <>
          <div className={styles['header'] + ' ' + styles[y > 0 ? 'fixed' : '']}>
